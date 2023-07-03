@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <Modal isOpen title='Airbnb App' />
+        <Modal isOpen title='Airbnb App' actionLabel='Submit' />
         <Navbar />
         {children}
       </body>
