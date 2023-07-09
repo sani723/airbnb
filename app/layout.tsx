@@ -1,4 +1,4 @@
-import Modal from './components/modals/Modal';
+import RegisterModal from './components/modals/RegisterModal';
 import Navbar from './components/navbar/Navbar';
 import './globals.css';
 import { Inter, Nunito } from 'next/font/google';
@@ -19,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <Modal isOpen title='Airbnb App' actionLabel='Submit' />
+        {/* <Modal isOpen title='Airbnb App' actionLabel='Submit' /> */}
+        <RegisterModal />
         <Navbar />
         {children}
       </body>
